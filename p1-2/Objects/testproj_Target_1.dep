@@ -1,0 +1,344 @@
+Dependencies for Project 'testproj', Target 'Target_1': (DO NOT MODIFY !)
+CompilerVersion: 6220000::V6.22::ARMCLANG
+F (.\RTE\Device\STM32C031C6Tx\STCubeGenerated\Src\main.c)(0x6705A694)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/main.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\main.h)(0x6705A613)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (.\RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_it.h)(0x6705A612)()
+F (.\RTE\Device\STM32C031C6Tx\STCubeGenerated\Src\stm32c0xx_it.c)(0x6705A612)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_it.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\main.h)(0x6705A613)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_it.h)(0x6705A612)
+F (RTE/Device/STM32C031C6Tx/startup_stm32c031xx.s)(0x67058FE1)(--target=arm-arm-none-eabi -mcpu=cortex-m0plus -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-Wa,armasm,--pd,"__UVISION_VERSION SETA 541" -Wa,armasm,--pd,"STM32C031xx SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o ./objects/startup_stm32c031xx.o)
+F (RTE/Device/STM32C031C6Tx/system_stm32c0xx.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/system_stm32c0xx.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Repos/EmbeddedTesting/p1-2/RTE/Device/STM32C031C6Tx/STCubeGenerated/Src/stm32c0xx_hal_msp.c)(0x6705A612)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_msp.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\main.h)(0x6705A613)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_cortex.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_exti.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_flash.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_flash_ex.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_gpio.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_pwr.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_pwr_ex.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_rcc.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)
+F (C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c)(0x67058FE1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O0 -ffunction-sections -Wall -Wextra -Wno-packed -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier-I./RTE/Device/STM32C031C6Tx-I./RTE/Device/STM32C031C6Tx/STCubeGenerated-I./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc-I./RTE/_Target_1-IC:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc-IC:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy-D__UVISION_VERSION="541" -DSTM32C031xx -D_RTE_  -include "Pre_Include_Global.h"-o ./objects/stm32c0xx_hal_rcc_ex.o -MMD)
+I (RTE\_Target_1\Pre_Include_Global.h)(0x6705A61F)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_system.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c0xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\stm32c031xx.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\ARM\CMSIS\6.1.0\CMSIS\Core\Include\core_cm0plus.h)(0x664C8148)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\CMSIS\Device\ST\STM32C0xx\Include\system_stm32c0xx.h)(0x67058FE1)
+I (RTE\Device\STM32C031C6Tx\STCubeGenerated\Inc\stm32c0xx_hal_conf.h)(0x6705A612)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_def.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_ll_rcc.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_rcc_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_gpio_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_dma_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_cortex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_exti.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_flash_ex.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr.h)(0x67058FE1)
+I (C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\Drivers\STM32C0xx_HAL_Driver\Inc\stm32c0xx_hal_pwr_ex.h)(0x67058FE1)

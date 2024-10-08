@@ -1,0 +1,20 @@
+--cpu Cortex-M0+
+".\objects\main.o"
+".\objects\stm32c0xx_it.o"
+".\objects\startup_stm32c031xx.o"
+".\objects\system_stm32c0xx.o"
+".\objects\stm32c0xx_hal_msp.o"
+".\objects\stm32c0xx_hal.o"
+".\objects\stm32c0xx_hal_cortex.o"
+".\objects\stm32c0xx_hal_exti.o"
+".\objects\stm32c0xx_hal_flash.o"
+".\objects\stm32c0xx_hal_flash_ex.o"
+".\objects\stm32c0xx_hal_gpio.o"
+".\objects\stm32c0xx_hal_pwr.o"
+".\objects\stm32c0xx_hal_pwr_ex.o"
+".\objects\stm32c0xx_hal_rcc.o"
+".\objects\stm32c0xx_hal_rcc_ex.o"
+--strict --scatter ".\Objects\testproj.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\testproj.map" -o .\Objects\testproj.axf

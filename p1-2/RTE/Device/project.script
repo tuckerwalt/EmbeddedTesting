@@ -1,0 +1,7 @@
+load STM32C031C6Tx 
+project name STCubeGenerated 
+project toolchain "MDK-ARM V5" 
+project path "C:\Repos\EmbeddedTesting\p1-2\RTE\Device\STM32C031C6Tx\" 
+set tpl_path "C:\Users\JoeBob\AppData\Local\Arm\Packs\Keil\STM32C0xx_DFP\1.0.0\MDK\CubeMX" 
+set dest_path "STM32C031C6Tx" 
+SetCopyLibrary  "copy as reference"

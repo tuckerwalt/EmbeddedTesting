@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.41.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Walter Tucker
+HCL Software
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: May 31 2033. Cached until: Oct 15 2024
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.41.0.0
+Toolchain Path:  C:\Programs\Keil_MDK\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.22
+Assembler:       Armasm.exe V6.22
+Linker/Locator:  ArmLink.exe V6.22
+Library Manager: ArmAr.exe V6.22
+Hex Converter:   FromElf.exe V6.22
+CPU DLL:         SARMCM3.DLL V5.41.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Repos\EmbeddedTesting\p1-2\testproj.uvprojx
+Project File Date:  10/08/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.22', folder: 'C:\Programs\Keil_MDK\ARM\ARMCLANG\Bin'
+Build target 'TestTarget'
+RTE/Device/STM32C031C6Tx/STCubeGenerated/Src/main.c(93): warning: variable 'counter' set but not used [-Wunused-but-set-variable]
+   93 |   int counter = 0;
+      |       ^
+1 warning generated.
+compiling main.c...
+linking...
+Program Size: Code=444 RO-data=224 RW-data=4 ZI-data=1644  
+".\Objects\testproj.axf" - 0 Error(s), 1 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                project-path/Keil.FrameworkCubeMX.1.0.0.pack
+                Keil::FrameworkCubeMX@1.0.0
+                STM32CubeMX generated pack description
+   * Component: STM32CubeMX Version: 1.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32C0xx_DFP.1.0.0.pack
+                Keil::STM32C0xx_DFP@1.0.0
+                STMicroelectronics STM32C0 Series Device Support
+   * Component: STM32Cube Framework Version: 1.1.0
+   * Component: Common Version: 1.0.0
+   * Component: Cortex Version: 1.0.0
+   * Component: EXTI Version: 1.0.0
+   * Component: Flash Version: 1.0.0
+   * Component: GPIO Version: 1.0.0
+   * Component: PWR Version: 1.0.0
+   * Component: RCC Version: 1.0.0
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32C031C6Tx
+  ./RTE/Device/STM32C031C6Tx/STCubeGenerated
+  ./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc
+  ./RTE/_TestTarget
+  C:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include
+  C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc
+  C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Device:STM32Cube Framework(API)@1.1.0
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+
+   * Component: Keil::Device:STM32Cube Framework:STM32CubeMX@1.1.0
+      Include file:  MX_Device.h
+      Source file:   STCubeGenerated/Src/stm32c0xx_hal_msp.c
+      Include file:  STCubeGenerated/Inc/stm32c0xx_hal_conf.h
+
+   * Component: Keil::Device:STM32Cube HAL:Common@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c
+      Include file:  Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h
+
+   * Component: Keil::Device:STM32Cube HAL:Cortex@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_cortex.c
+
+   * Component: Keil::Device:STM32Cube HAL:EXTI@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c
+
+   * Component: Keil::Device:STM32Cube HAL:Flash@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c
+
+   * Component: Keil::Device:STM32Cube HAL:GPIO@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c
+
+   * Component: Keil::Device:STM32Cube HAL:PWR@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr_ex.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_pwr.c
+
+   * Component: Keil::Device:STM32Cube HAL:RCC@1.0.0
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.c
+
+   * Component: Keil::Device:Startup@1.0.0
+      Include file:  Drivers/CMSIS/Device/ST/STM32C0xx/Include/stm32c0xx.h
+      Source file:   Drivers/CMSIS/Device/ST/STM32C0xx/Source/Templates/arm/startup_stm32c031xx.s
+      Source file:   Drivers/CMSIS/Device/ST/STM32C0xx/Source/Templates/system_stm32c0xx.c
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
