@@ -62,36 +62,57 @@ void SystemClock_Config(void);
 #define PIN5 (0x01U << 5)
 #define BIGPIN5 (0x3U << 10)
 
+void delay(int iter)
+{
+  volatile int counter = 0;
+  while (counter < iter)
+    ++counter;
+}
+
+// not atomic
+// read the output, and flip the selected pin(s)
+void toggle_GPIO(GPIO_TypeDef *loc, uint32_t pin)
+{
+  volatile uint32_t odr = loc->ODR;
+  loc->BSRR = ((odr & pin) << 16) | (~odr & pin);
+}
+
 int main(void)
 {
+  uint32_t tmp;
+  
   //RCC_IOPENR |= GPIOA_OFF; // enable clock for GPIOA
   RCC->IOPENR |= RCC_IOPENR_GPIOAEN;
   
   // Define pin5 of GPIOA as an output
-  GPIOA->MODER &= ~GPIO_MODER_MODE5; // Clear pin5 port mode
-  GPIOA->MODER |= GPIO_MODER_MODE5_0; // set first bit of pin5 port mode GPIOA (01 = output)
+  tmp = GPIOA->MODER;
+  tmp &= ~GPIO_MODER_MODE5; // Clear pin5 port mode
+  tmp |= GPIO_MODER_MODE5_0; // set first bit of pin5 port mode GPIOA (01 = output)
+  GPIOA->MODER = tmp;
+  
   GPIOA->OTYPER &= ~GPIO_OTYPER_OT5; // set pin 5 output type as push-pull (0)
-  GPIOA->OSPEEDR &= ~GPIO_OSPEEDR_OSPEED5; // clear pin5 speed
-  GPIOA->OSPEEDR |= GPIO_OSPEEDR_OSPEED5_0; // set first bit of pin5 speed GPIOA (01 = low speed)
+  
+  tmp = GPIOA->OSPEEDR;
+  tmp &= ~GPIO_OSPEEDR_OSPEED5; // clear pin5 speed
+  tmp |= GPIO_OSPEEDR_OSPEED5_0; // set first bit of pin5 speed GPIOA (01 = low speed)
+  GPIOA->OSPEEDR = tmp;
+  
   GPIOA->PUPDR &= ~GPIO_PUPDR_PUPD5; // Clear pin5 pullup/pulldown (0 = neither)
   
+  // make sure the pin is reset
+  GPIOA->BSRR = GPIO_BSRR_BR5; // reset pin 5 (LED)
   while (1)
   {
-    volatile int counter = 0;
     //GPIOA BSRR = GPIOA(0x50000000) + BSRR(0x18)
-    GPIOA->BSRR = GPIO_BSRR_BS5; // set pin 5 (LED)
-    while (counter < 500000)
-    {
-      ++counter;
-    }
+    //GPIOA->BSRR = GPIO_BSRR_BS5; // set pin 5 (LED)
+    //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+    toggle_GPIO(GPIOA, GPIO_PIN_5);
+    delay(500000);
+
+    //GPIOA->BSRR = GPIO_BSRR_BR5; // reset pin 5 (LED)
+    toggle_GPIO(GPIOA, GPIO_PIN_5);
+    delay(1000000);
     
-    counter = 0;
-    
-    GPIOA->BSRR = GPIO_BSRR_BR5; // reset pin 5 (LED)
-    while (counter < 500000)
-    {
-      ++counter;
-    }
   }
   
   return 0;
