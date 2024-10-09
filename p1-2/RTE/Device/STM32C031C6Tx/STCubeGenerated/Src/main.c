@@ -62,11 +62,10 @@ void SystemClock_Config(void);
 #define PIN5 (0x01U << 5)
 #define BIGPIN5 (0x3U << 10)
 
-void delay(int iter)
+void delay(volatile unsigned int iter)
 {
-  volatile int counter = 0;
-  while (counter < iter)
-    ++counter;
+  while (iter > 0)
+    --iter;
 }
 
 // not atomic

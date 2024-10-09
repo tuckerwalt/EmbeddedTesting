@@ -6,13 +6,13 @@
 IDE-Version: µVision V5.41.0.0
 Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
 License Information: Walter Tucker
-HCL Software
+WTuck
 User-based license: Keil MDK Community (non-commercial free of charge)
-Valid until: May 31 2033. Cached until: Oct 15 2024
+Valid until: May 31 2033. Cached until: Oct 16 2024
  
 Tool Versions:
 Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.41.0.0
-Toolchain Path:  C:\Programs\Keil_MDK\ARM\ARMCLANG\Bin
+Toolchain Path:  E:\Programs\ARM\KeilMDK\ARM\ARMCLANG\Bin
 C Compiler:      ArmClang.exe V6.22
 Assembler:       Armasm.exe V6.22
 Linker/Locator:  ArmLink.exe V6.22
@@ -24,19 +24,19 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.3.0.0
 Dialog DLL:      TARMCM1.DLL V1.14.6.0
  
 <h2>Project:</h2>
-C:\Repos\EmbeddedTesting\p1-2\testproj.uvprojx
-Project File Date:  10/08/2024
+E:\Repos\EmbeddedTesting\p1-2\testproj.uvprojx
+Project File Date:  10/09/2024
 
 <h2>Output:</h2>
-*** Using Compiler 'V6.22', folder: 'C:\Programs\Keil_MDK\ARM\ARMCLANG\Bin'
+*** Using Compiler 'V6.22', folder: 'E:\Programs\ARM\KeilMDK\ARM\ARMCLANG\Bin'
 Build target 'TestTarget'
-RTE/Device/STM32C031C6Tx/STCubeGenerated/Src/main.c(136): warning: variable 'counter' set but not used [-Wunused-but-set-variable]
-  136 |   int counter = 0;
+RTE/Device/STM32C031C6Tx/STCubeGenerated/Src/main.c(157): warning: variable 'counter' set but not used [-Wunused-but-set-variable]
+  157 |   int counter = 0;
       |       ^
 1 warning generated.
 compiling main.c...
 linking...
-Program Size: Code=580 RO-data=224 RW-data=4 ZI-data=1644  
+Program Size: Code=648 RO-data=224 RW-data=4 ZI-data=1644  
 ".\Objects\testproj.axf" - 0 Error(s), 1 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -72,10 +72,10 @@ Package Vendor: Keil
   ./RTE/Device/STM32C031C6Tx/STCubeGenerated
   ./RTE/Device/STM32C031C6Tx/STCubeGenerated/Inc
   ./RTE/_TestTarget
-  C:/Users/JoeBob/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
-  C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include
-  C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc
-  C:/Users/JoeBob/AppData/Local/Arm/Packs/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy
+  E:/Programs/ARM/MDKPacks/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+  E:/Programs/ARM/MDKPacks/Keil/STM32C0xx_DFP/1.0.0/Drivers/CMSIS/Device/ST/STM32C0xx/Include
+  E:/Programs/ARM/MDKPacks/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc
+  E:/Programs/ARM/MDKPacks/Keil/STM32C0xx_DFP/1.0.0/Drivers/STM32C0xx_HAL_Driver/Inc/Legacy
 
 <h2>Collection of Component Files used:</h2>
 
@@ -85,8 +85,8 @@ Package Vendor: Keil
 
    * Component: Keil::Device:STM32Cube Framework:STM32CubeMX@1.1.0
       Include file:  STCubeGenerated/Inc/stm32c0xx_hal_conf.h
-      Source file:   STCubeGenerated/Src/stm32c0xx_hal_msp.c
       Include file:  MX_Device.h
+      Source file:   STCubeGenerated/Src/stm32c0xx_hal_msp.c
 
    * Component: Keil::Device:STM32Cube HAL:Common@1.0.0
       Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal.c
@@ -99,8 +99,8 @@ Package Vendor: Keil
       Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c
 
    * Component: Keil::Device:STM32Cube HAL:Flash@1.0.0
-      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c
       Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash_ex.c
+      Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_flash.c
 
    * Component: Keil::Device:STM32Cube HAL:GPIO@1.0.0
       Source file:   Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_gpio.c
@@ -117,7 +117,7 @@ Package Vendor: Keil
       Include file:  Drivers/CMSIS/Device/ST/STM32C0xx/Include/stm32c0xx.h
       Source file:   Drivers/CMSIS/Device/ST/STM32C0xx/Source/Templates/arm/startup_stm32c031xx.s
       Source file:   Drivers/CMSIS/Device/ST/STM32C0xx/Source/Templates/system_stm32c0xx.c
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>
