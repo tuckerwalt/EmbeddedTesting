@@ -31,6 +31,8 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define TIME_BUTTON_HELD_TO_SWITCH_MS 2000
+#define LED_DELAY_INCREMENT_MS 250
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -41,6 +43,12 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+typedef enum 
+{
+  IDLE,
+  WAITING_ON_BTN_RELEASE,
+  BTN_HELD
+} BLINK_STATE;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -64,13 +72,66 @@ void toggle_GPIO(GPIO_TypeDef *loc, uint32_t pin)
   volatile uint32_t odr = loc->ODR;
   loc->BSRR = ((odr & pin) << 16) | (~odr & pin);
 }
-
-void blink(volatile uint16_t *state)
+void blink_once(uint16_t blink_state, uint32_t delay)
 {
-  while (1)
+  if (blink_state)
   {
     BSP_LED4_toggle();
-    BSP_delay((*state + 1) * 100);
+    BSP_delay(delay);
+  }
+}
+
+void blink(volatile BTN_STATE *btn_state)
+{
+  uint16_t tick_scale = 0;
+  BLINK_STATE blink_state = IDLE;
+  uint32_t saved_ticks = 0;
+  uint16_t bBlinking = 1;
+  while (1)
+  {
+    switch(blink_state)
+    {
+      case IDLE:
+        if (*btn_state == PRESSED)
+        {
+          blink_state = WAITING_ON_BTN_RELEASE;
+          saved_ticks = BSP_GetTicks();
+        }
+        blink_once(bBlinking, ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2); 
+        break;
+      case WAITING_ON_BTN_RELEASE:
+        if (*btn_state == PRESSED)
+        {
+          if (BSP_GetTicks() - saved_ticks >= TIME_BUTTON_HELD_TO_SWITCH_MS)
+          {
+            // swap states
+            bBlinking ^= 0x1;
+            BSP_LED4_reset();
+            blink_state = BTN_HELD;
+          }
+          else
+          {
+            blink_once(bBlinking, ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2);
+          }
+        }
+        else // only switch states if we are currently blinking
+        {
+          if (bBlinking)
+            tick_scale = (tick_scale + 1) & 0x3U;
+          blink_state = IDLE;
+        }
+        break;
+      case BTN_HELD:
+        if (*btn_state == RELEASED)
+        {
+          blink_state = IDLE;
+        }
+        blink_once(bBlinking, ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2);
+        break;
+      default:
+        break;
+    }
+    
   }
 }
 /* USER CODE END 0 */
@@ -84,7 +145,7 @@ int main(void)
 
   /* USER CODE BEGIN 1 */
   uint32_t tmp;
-  volatile uint16_t state = 0;
+  volatile BTN_STATE state = RELEASED;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -182,7 +243,24 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void EXTI4_15_IRQHandler(void)
+{
+  // PC13 Rising (button released)
+  if (EXTI->RPR1 & EXTI_RPR1_RPIF13)
+  {
+    BSP_BUTTON_released();
+    EXTI->RPR1 = EXTI_RPR1_RPIF13;
+  }
+  // PC13 Falling (button pressed)
+  else if (EXTI->FPR1 & EXTI_FPR1_FPIF13)
+  {
 
+    BSP_BUTTON_pressed();
+    EXTI->FPR1 = EXTI_FPR1_FPIF13; 
+  }
+  else
+    while (1);
+}
 /* USER CODE END 4 */
 
 /**
