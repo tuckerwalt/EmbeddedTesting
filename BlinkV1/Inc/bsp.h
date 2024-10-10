@@ -4,7 +4,7 @@
 //#include "stm32c0xx_hal.h"
 #include "stdint.h"
 
-void BSP_init(void);
+void BSP_init(volatile uint16_t *state);
 
 void BSP_LED4_toggle(void);
 
