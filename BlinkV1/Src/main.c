@@ -41,7 +41,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -65,6 +64,15 @@ void toggle_GPIO(GPIO_TypeDef *loc, uint32_t pin)
   volatile uint32_t odr = loc->ODR;
   loc->BSRR = ((odr & pin) << 16) | (~odr & pin);
 }
+
+void blink(volatile uint16_t *state)
+{
+  while (1)
+  {
+    BSP_LED4_toggle();
+    BSP_delay((*state + 1) * 100);
+  }
+}
 /* USER CODE END 0 */
 
 /**
@@ -82,7 +90,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+  //HAL_Init();
 
   /* USER CODE BEGIN Init */
   
@@ -95,7 +103,7 @@ int main(void)
   /* USER CODE END Init */
 
   /* Configure the system clock */
-  SystemClock_Config();
+  //SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
 
@@ -113,11 +121,13 @@ int main(void)
   GPIOA->BSRR = GPIO_BSRR_BR5; // reset pin 5 (LED)
   while (1)
   {
-    if (state == 1)
+    blink(&state);
+    /*if (state == 1)
     {
+      // Error state, just blink endlessly
       BSP_LED4_toggle();
       BSP_delay(500000);
-    }
+    }*/
     //GPIOA BSRR = GPIOA(0x50000000) + BSRR(0x18)
     //GPIOA->BSRR = GPIO_BSRR_BS5; // set pin 5 (LED)
     //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);

@@ -10,4 +10,5 @@ void BSP_LED4_toggle(void);
 
 void BSP_delay(volatile uint32_t iter);
 
+void BSP_IncTick();
 #endif // WT_BSP_H_
