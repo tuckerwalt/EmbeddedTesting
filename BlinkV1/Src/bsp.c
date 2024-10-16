@@ -105,15 +105,15 @@ void BSP_delay(volatile uint32_t ms)
 void BSP_BUTTON_pressed(void)
 {
   *state = PRESSED;
-  if (in_delay)
-    end_delay = 1;
+  //if (in_delay)
+    //end_delay = 1;
 }
 
 void BSP_BUTTON_released(void)
 {
   *state = RELEASED;
-  if (in_delay)
-    end_delay = 1;
+  //if (in_delay)
+    //end_delay = 1;
 }
 
 /*

@@ -43,12 +43,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-typedef enum 
-{
-  IDLE,
-  WAITING_ON_BTN_RELEASE,
-  BTN_HELD
-} BLINK_STATE;
+static uint8_t bBlinking;
+static uint8_t tick_scale;
+static uint32_t tick_pressed;
+static uint8_t bButtonHeldWaitingToRelease;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -59,81 +57,23 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-void delay(volatile unsigned int iter)
+
+// If the button is pressed and released within 2 seconds, change the blink speed between 4 stages
+void ButtonReleased(void)
 {
-  while (iter > 0)
-    --iter;
+  if (BSP_GetTicks() - tick_pressed < TIME_BUTTON_HELD_TO_SWITCH_MS && bBlinking)
+  {
+    tick_scale = (tick_scale + 1) & 0x3U;
+  }
+  bButtonHeldWaitingToRelease = 0;
 }
 
-// not atomic
-// read the output, and flip the selected pin(s)
-void toggle_GPIO(GPIO_TypeDef *loc, uint32_t pin)
+// Record the time that the button has been pressed for
+void ButtonPressed(void)
 {
-  volatile uint32_t odr = loc->ODR;
-  loc->BSRR = ((odr & pin) << 16) | (~odr & pin);
-}
-void blink_once(uint16_t blink_state, uint32_t delay)
-{
-  if (blink_state)
-  {
-    BSP_LED4_toggle();
-    BSP_delay(delay);
-  }
+  tick_pressed = BSP_GetTicks();
 }
 
-void blink(volatile BTN_STATE *btn_state)
-{
-  uint16_t tick_scale = 0;
-  BLINK_STATE blink_state = IDLE;
-  uint32_t saved_ticks = 0;
-  uint16_t bBlinking = 1;
-  while (1)
-  {
-    switch(blink_state)
-    {
-      case IDLE:
-        if (*btn_state == PRESSED)
-        {
-          blink_state = WAITING_ON_BTN_RELEASE;
-          saved_ticks = BSP_GetTicks();
-        }
-        blink_once(bBlinking, ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2); 
-        break;
-      case WAITING_ON_BTN_RELEASE:
-        if (*btn_state == PRESSED)
-        {
-          if (BSP_GetTicks() - saved_ticks >= TIME_BUTTON_HELD_TO_SWITCH_MS)
-          {
-            // swap states
-            bBlinking ^= 0x1;
-            BSP_LED4_reset();
-            blink_state = BTN_HELD;
-          }
-          else
-          {
-            blink_once(bBlinking, ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2);
-          }
-        }
-        else // only switch states if we are currently blinking
-        {
-          if (bBlinking)
-            tick_scale = (tick_scale + 1) & 0x3U;
-          blink_state = IDLE;
-        }
-        break;
-      case BTN_HELD:
-        if (*btn_state == RELEASED)
-        {
-          blink_state = IDLE;
-        }
-        blink_once(bBlinking, ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2);
-        break;
-      default:
-        break;
-    }
-    
-  }
-}
 /* USER CODE END 0 */
 
 /**
@@ -146,6 +86,13 @@ int main(void)
   /* USER CODE BEGIN 1 */
   uint32_t tmp;
   volatile BTN_STATE state = RELEASED;
+  static uint32_t lastblinktick = 0;
+  uint32_t cur_ticks = 0;
+  uint32_t delay = 0;
+  tick_scale = 0;
+  bBlinking = 1;
+  tick_pressed = 0;
+  
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -156,10 +103,6 @@ int main(void)
   /* USER CODE BEGIN Init */
   
   BSP_init(&state);
-  
-  // Initialize the EXTI block
-  //EXTI->EXTICR[3] |= EXTI_EXTICR4_EXTI13_1;// HUH? pg 256 reference manual
-  //HAL_EXTI_SetConfigLine();
   
   /* USER CODE END Init */
 
@@ -182,22 +125,30 @@ int main(void)
   GPIOA->BSRR = GPIO_BSRR_BR5; // reset pin 5 (LED)
   while (1)
   {
-    blink(&state);
-    /*if (state == 1)
+    cur_ticks = BSP_GetTicks();
+    delay = ((tick_scale + 1) * LED_DELAY_INCREMENT_MS) / 2;
+    
+    // Toggle the LED if it's been long enough since the last blink
+    if (bBlinking && cur_ticks - lastblinktick >= delay)
     {
-      // Error state, just blink endlessly
+      lastblinktick = cur_ticks;
       BSP_LED4_toggle();
-      BSP_delay(500000);
-    }*/
-    //GPIOA BSRR = GPIOA(0x50000000) + BSRR(0x18)
-    //GPIOA->BSRR = GPIO_BSRR_BS5; // set pin 5 (LED)
-    //HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
-    //BSP_LED4_toggle();
-    //BSP_delay(500000);
-
-    //GPIOA->BSRR = GPIO_BSRR_BR5; // reset pin 5 (LED)
-    //BSP_LED4_toggle();
-    //BSP_delay(1000000);
+    }
+    
+    // If the button has been held for at least two seconds, turn the blinking LED on/off.
+    // Nothing should happen if the button continues to be held.
+    // IRQ disabled because having a button released in the middle of this block
+    // would desync the states and caused missed inputs
+    __disable_irq();
+    if (state == PRESSED && !bButtonHeldWaitingToRelease && cur_ticks - tick_pressed > TIME_BUTTON_HELD_TO_SWITCH_MS)
+    {
+      bButtonHeldWaitingToRelease = 1;
+      bBlinking ^= 0x1;
+      if (!bBlinking)
+        BSP_LED4_reset();
+    }
+    __enable_irq();
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -249,13 +200,14 @@ void EXTI4_15_IRQHandler(void)
   if (EXTI->RPR1 & EXTI_RPR1_RPIF13)
   {
     BSP_BUTTON_released();
+    ButtonReleased();
     EXTI->RPR1 = EXTI_RPR1_RPIF13;
   }
   // PC13 Falling (button pressed)
   else if (EXTI->FPR1 & EXTI_FPR1_FPIF13)
   {
-
     BSP_BUTTON_pressed();
+    ButtonPressed();
     EXTI->FPR1 = EXTI_FPR1_FPIF13; 
   }
   else
