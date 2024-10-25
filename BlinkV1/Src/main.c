@@ -139,7 +139,7 @@ int main(void)
     // Nothing should happen if the button continues to be held.
     // IRQ disabled because having a button released in the middle of this block
     // would desync the states and caused missed inputs
-    __disable_irq();
+    NVIC_DisableIRQ(EXTI4_15_IRQn);
     if (state == PRESSED && !bButtonHeldWaitingToRelease && cur_ticks - tick_pressed > TIME_BUTTON_HELD_TO_SWITCH_MS)
     {
       bButtonHeldWaitingToRelease = 1;
@@ -147,7 +147,7 @@ int main(void)
       if (!bBlinking)
         BSP_LED4_reset();
     }
-    __enable_irq();
+    NVIC_EnableIRQ(EXTI4_15_IRQn);
     
     /* USER CODE END WHILE */
 
