@@ -395,11 +395,6 @@
           <GroupName>Application/User</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Src/main.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32c0xx_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/stm32c0xx_it.c</FilePath>
@@ -423,6 +418,11 @@
               <FileName>main.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Inc\main.h</FilePath>
+            </File>
+            <File>
+              <FileName>mainsolo.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\mainsolo.c</FilePath>
             </File>
           </Files>
         </Group>
