@@ -19,7 +19,7 @@ static void BSP_EXTI_BTN_init(void)
   //init.Pull = GPIO_NOPULL;
   //HAL_GPIO_Init(GPIOC, &init);
   
-  // set EXTI13 to 0x2 (see ref manual p.256)
+  // set EXTI13 to 0x2 (PC13) (see ref manual p.256)
   EXTI->EXTICR[3] |= 2 << 8;
   EXTI->IMR1 |= GPIO_PIN_13;
   EXTI->RTSR1 |= GPIO_PIN_13;
@@ -31,7 +31,57 @@ static void BSP_EXTI_BTN_init(void)
   NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
-void BSP_init(volatile BTN_STATE *s)
+static void BSP_EXTI_BTN_PA15_init(void)
+{
+  GPIO_InitTypeDef init = {0};
+  
+  //init.Pin = GPIO_PIN_13;
+  //init.Mode = GPIO_MODE_IT_RISING_FALLING;
+  //init.Pull = GPIO_NOPULL;
+  //HAL_GPIO_Init(GPIOC, &init);
+  
+  // clear EXTI15 to 0x0 for PA15 (see ref manual p.256)
+  EXTI->EXTICR[3] &= ~(0xFF << 24);
+  EXTI->IMR1 |= GPIO_PIN_15;
+  EXTI->RTSR1 |= GPIO_PIN_15;
+  EXTI->FTSR1 |= GPIO_PIN_15;
+  
+  //HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
+  //HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
+  NVIC_SetPriority(EXTI4_15_IRQn, 0);
+  NVIC_EnableIRQ(EXTI4_15_IRQn);
+}
+
+static void BSP_OUTPUT_init(GPIO_TypeDef *loc, uint32_t pin)
+{
+  uint32_t tmp;
+  tmp = loc->MODER;
+  tmp &= ~(0x3UL << (2 * pin)); // Clear pin port mode
+  tmp |= (0x1UL << (2 * pin)); // set first bit of port mode (01 = output)
+  loc->MODER = tmp;
+  
+  loc->OTYPER &= ~(0x1 << pin); // set pin output type as push-pull (0)
+  
+  tmp = loc->OSPEEDR;
+  tmp &= ~(0x3UL << (2 * pin)); // clear pin speed
+  tmp |= (0x1UL << (2 * pin)); // set first bit of pin speed (01 = low speed)
+  loc->OSPEEDR = tmp;
+  
+  loc->PUPDR &= ~(0x3UL << (2 * pin)); // Clear pin pullup/pulldown (0 = neither)
+}
+
+static void BSP_INPUT_init(GPIO_TypeDef *loc, uint32_t pin)
+{
+  uint32_t tmp;
+  
+  tmp = loc->MODER;
+  tmp &= ~(0x3UL << (2 * pin)); // Clear pin port mode (00 = input)
+  loc->MODER = tmp;
+  
+  loc->PUPDR &= ~(0x3UL << (2 * pin)); // Clear pin pullup/pulldown (0 = neither)
+}
+
+void BSP_init(volatile BTN_STATE *s, uint8_t breadboard_attached)
 {
   uint32_t tmp;
   state = s;
@@ -42,29 +92,25 @@ void BSP_init(volatile BTN_STATE *s)
   RCC->IOPENR |= RCC_IOPENR_GPIOAEN;
   RCC->IOPENR |= RCC_IOPENR_GPIOCEN;
   
-  // Define pin5 of GPIOA as output (user LED4)
-  tmp = GPIOA->MODER;
-  tmp &= ~GPIO_MODER_MODE5; // Clear pin5 port mode
-  tmp |= GPIO_MODER_MODE5_0; // set first bit of pin5 port mode GPIOA (01 = output)
-  GPIOA->MODER = tmp;
+  // PA5(User LED4) output
+  BSP_OUTPUT_init(GPIOA, 5);
   
-  // Define pin13 of GPIOC as an input (user button)
-  tmp = GPIOC->MODER;
-  tmp &= ~GPIO_MODER_MODE13; // Clear pin13 port mode (00 = input)
-  GPIOC->MODER = tmp;
+  if (breadboard_attached)
+  {
+    // PA10(D2) output line to breadboard LED
+    BSP_OUTPUT_init(GPIOA, 10);
+  }
   
-  GPIOA->OTYPER &= ~GPIO_OTYPER_OT5; // set pin 5 output type as push-pull (0)
+  // Set PC13(User Btn) as input
+  BSP_INPUT_init(GPIOC, 13);
   
-  tmp = GPIOA->OSPEEDR;
-  tmp &= ~GPIO_OSPEEDR_OSPEED5; // clear pin5 speed
-  tmp |= GPIO_OSPEEDR_OSPEED5_0; // set first bit of pin5 speed GPIOA (01 = low speed)
-  GPIOA->OSPEEDR = tmp;
-  
-  GPIOA->PUPDR &= ~GPIO_PUPDR_PUPD5; // Clear pin5 pullup/pulldown (0 = neither)
-  GPIOC->PUPDR &= ~GPIO_PUPDR_PUPD13; // Clear GPIOC-13 pullup/pulldown (0 = neither)
-  
+  if (breadboard_attached)
+  {
+    BSP_INPUT_init(GPIOA, 15);
+  }
   // Enable interrupt for PC13(button)
   BSP_EXTI_BTN_init();
+  BSP_EXTI_BTN_PA15_init();
   
   // Enable the systick, pinging every ms
   ticks = 0;
@@ -91,6 +137,21 @@ void BSP_LED4_reset(void)
 void BSP_LED4_toggle(void)
 {
   BSP_GPIO_toggle(GPIOA, GPIO_PIN_5);
+}
+
+void BSP_WHITELED_set(void)
+{
+  GPIOA->BSRR = GPIO_BSRR_BS10; // set pin 10 (LED)
+}
+
+void BSP_WHITELED_reset(void)
+{
+  GPIOA->BSRR = GPIO_BSRR_BR10; // reset pin 10 (LED)
+}
+
+void BSP_WHITELED_toggle(void)
+{
+  BSP_GPIO_toggle(GPIOA, GPIO_PIN_10);
 }
 
 void BSP_delay(volatile uint32_t ms)

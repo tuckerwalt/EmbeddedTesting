@@ -33,6 +33,7 @@
 /* USER CODE BEGIN PD */
 #define TIME_BUTTON_HELD_TO_SWITCH_MS 2000
 #define LED_DELAY_INCREMENT_MS 250
+#define BREADBOARD_ATTACHED 1
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -102,7 +103,7 @@ int main(void)
 
   /* USER CODE BEGIN Init */
   
-  BSP_init(&state);
+  BSP_init(&state, BREADBOARD_ATTACHED);
   
   /* USER CODE END Init */
 
@@ -133,6 +134,7 @@ int main(void)
     {
       lastblinktick = cur_ticks;
       BSP_LED4_toggle();
+      BSP_WHITELED_toggle();
     }
     
     // If the button has been held for at least two seconds, turn the blinking LED on/off.
@@ -146,6 +148,7 @@ int main(void)
       bBlinking ^= 0x1;
       if (!bBlinking)
         BSP_LED4_reset();
+        BSP_WHITELED_reset();
     }
     NVIC_EnableIRQ(EXTI4_15_IRQn);
     
@@ -209,6 +212,18 @@ void EXTI4_15_IRQHandler(void)
     BSP_BUTTON_pressed();
     ButtonPressed();
     EXTI->FPR1 = EXTI_FPR1_FPIF13; 
+  }
+  else if (EXTI->FPR1 & EXTI_FPR1_FPIF15)
+  {
+    BSP_BUTTON_released();
+    ButtonReleased();
+    EXTI->FPR1 = EXTI_FPR1_FPIF15;
+  }
+  else if (EXTI->RPR1 & EXTI_RPR1_RPIF15)
+  {
+    BSP_BUTTON_pressed();
+    ButtonPressed();
+    EXTI->RPR1 = EXTI_RPR1_RPIF15;
   }
   else
     while (1);

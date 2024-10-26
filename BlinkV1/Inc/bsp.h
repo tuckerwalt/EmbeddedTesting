@@ -10,11 +10,15 @@ typedef enum
   PRESSED
 } BTN_STATE;
 
-void BSP_init(volatile BTN_STATE *state);
+void BSP_init(volatile BTN_STATE *state, uint8_t breadboard_attached);
 
 void BSP_LED4_toggle(void);
 void BSP_LED4_set(void);
 void BSP_LED4_reset(void);
+
+void BSP_WHITELED_toggle(void);
+void BSP_WHITELED_set(void);
+void BSP_WHITELED_reset(void);
 
 void BSP_delay(volatile uint32_t iter);
 
