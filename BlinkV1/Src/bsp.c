@@ -27,8 +27,8 @@ static void BSP_EXTI_BTN_init(void)
   
   //HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
   //HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
-  NVIC_SetPriority(EXTI4_15_IRQn, 0);
-  NVIC_EnableIRQ(EXTI4_15_IRQn);
+  //NVIC_SetPriority(EXTI4_15_IRQn, 0);
+  //NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
 static void BSP_EXTI_BTN_PA15_init(void)
@@ -48,8 +48,8 @@ static void BSP_EXTI_BTN_PA15_init(void)
   
   //HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
   //HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
-  NVIC_SetPriority(EXTI4_15_IRQn, 0);
-  NVIC_EnableIRQ(EXTI4_15_IRQn);
+  //NVIC_SetPriority(EXTI4_15_IRQn, 0);
+  //NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 
 static void BSP_OUTPUT_init(GPIO_TypeDef *loc, uint32_t pin)
@@ -111,6 +111,9 @@ void BSP_init(volatile BTN_STATE *s, uint8_t breadboard_attached)
   // Enable interrupt for PC13(button)
   BSP_EXTI_BTN_init();
   BSP_EXTI_BTN_PA15_init();
+  
+  NVIC_SetPriority(EXTI4_15_IRQn, 0);
+  NVIC_EnableIRQ(EXTI4_15_IRQn);
   
   // Enable the systick, pinging every ms
   ticks = 0;

@@ -199,6 +199,9 @@ void SystemClock_Config(void)
 /* USER CODE BEGIN 4 */
 void EXTI4_15_IRQHandler(void)
 {
+  static uint32_t last_action_tick = 0;
+  
+  NVIC_DisableIRQ(EXTI4_15_IRQn);
   // PC13 Rising (button released)
   if (EXTI->RPR1 & EXTI_RPR1_RPIF13)
   {
@@ -215,18 +218,28 @@ void EXTI4_15_IRQHandler(void)
   }
   else if (EXTI->FPR1 & EXTI_FPR1_FPIF15)
   {
-    BSP_BUTTON_released();
-    ButtonReleased();
+    if (BSP_GetTicks() - last_action_tick > 4)
+    {
+      BSP_BUTTON_released();
+      ButtonReleased();
+      last_action_tick = BSP_GetTicks();
+    }
     EXTI->FPR1 = EXTI_FPR1_FPIF15;
   }
   else if (EXTI->RPR1 & EXTI_RPR1_RPIF15)
   {
-    BSP_BUTTON_pressed();
-    ButtonPressed();
+    if (BSP_GetTicks() - last_action_tick > 4)
+    {
+      BSP_BUTTON_pressed();
+      ButtonPressed();
+      last_action_tick = BSP_GetTicks();
+    }
     EXTI->RPR1 = EXTI_RPR1_RPIF15;
   }
   else
     while (1);
+  
+  NVIC_EnableIRQ(EXTI4_15_IRQn);
 }
 /* USER CODE END 4 */
 
