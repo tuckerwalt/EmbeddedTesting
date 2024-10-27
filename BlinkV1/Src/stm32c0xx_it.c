@@ -23,6 +23,7 @@
 #include "stm32c0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "tasks.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -85,11 +86,15 @@ void NMI_Handler(void)
 void HardFault_Handler(void)
 {
   /* USER CODE BEGIN HardFault_IRQn 0 */
-
+  volatile int what = 0;
   /* USER CODE END HardFault_IRQn 0 */
   while (1)
   {
     /* USER CODE BEGIN W1_HardFault_IRQn 0 */
+    if (what)
+    {
+      what += 1;
+    }
     /* USER CODE END W1_HardFault_IRQn 0 */
   }
 }
@@ -110,15 +115,21 @@ void SVC_Handler(void)
 /**
   * @brief This function handles Pendable request for system service.
   */
-void PendSV_Handler(void)
-{
+//void PendSV_Handler(void)
+//{
   /* USER CODE BEGIN PendSV_IRQn 0 */
-
+  
+  // disable interrupts
+  //__disable_irq();
+  
+  //OSPendSV();
+  // enable interrupts
+  //__enable_irq();
   /* USER CODE END PendSV_IRQn 0 */
   /* USER CODE BEGIN PendSV_IRQn 1 */
 
   /* USER CODE END PendSV_IRQn 1 */
-}
+//}
 
 /**
   * @brief This function handles System tick timer.
@@ -130,7 +141,9 @@ void SysTick_Handler(void)
   /* USER CODE END SysTick_IRQn 0 */
   //HAL_IncTick();
   /* USER CODE BEGIN SysTick_IRQn 1 */
-
+  __disable_irq();
+  OSSched();
+  __enable_irq();
   /* USER CODE END SysTick_IRQn 1 */
 }
 

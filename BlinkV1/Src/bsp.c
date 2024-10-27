@@ -1,4 +1,5 @@
 #include "bsp.h"
+#include "tasks.h"
 #include "stm32c0xx_hal.h"
 
 #define EXTICR4 (*(volatile uint32_t)(0x40021800U + 0x60U + 0xCU))
@@ -108,6 +109,11 @@ void BSP_init(volatile BTN_STATE *s, uint8_t breadboard_attached)
   {
     BSP_INPUT_init(GPIOA, 15);
   }
+  
+}
+
+void OSRunCallback(void)
+{
   // Enable interrupt for PC13(button)
   BSP_EXTI_BTN_init();
   BSP_EXTI_BTN_PA15_init();
@@ -119,6 +125,7 @@ void BSP_init(volatile BTN_STATE *s, uint8_t breadboard_attached)
   ticks = 0;
   SystemCoreClockUpdate();
   SysTick_Config(SystemCoreClock / 1000);
+  NVIC_SetPriority(SysTick_IRQn, 0x1U);
 }
 
 static void BSP_GPIO_toggle(GPIO_TypeDef *loc, uint32_t pin)

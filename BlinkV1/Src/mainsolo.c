@@ -1,5 +1,6 @@
 #include "main.h"
 #include "bsp.h"
+#include "tasks.h"
 
 #define TIME_BUTTON_HELD_TO_SWITCH_MS 2000
 #define LED_DELAY_INCREMENT_MS 250
@@ -25,8 +26,9 @@ void ButtonPressed(void)
   tick_pressed = BSP_GetTicks();
 }
 
-uint32_t stack_led4[42];
-uint32_t *sp_led4 = &stack_led4[42];
+uint32_t stack_led4[40];
+uint32_t *sp_led4 = &stack_led4[40];
+OSTask led4task;
 void main_LED4()
 {
   static uint32_t lastblinktick = 0;
@@ -45,8 +47,9 @@ void main_LED4()
   }
 }
 
-uint32_t stack_whiteled[42];
-uint32_t *sp_whiteled = &stack_whiteled[42];
+uint32_t stack_whiteled[40];
+uint32_t *sp_whiteled = &stack_whiteled[40];
+OSTask whiteledtask;
 void main_WHITELED()
 {
   static uint32_t lastblinktick = 0;
@@ -68,10 +71,12 @@ void main_WHITELED()
 int main(void)
 {
   volatile BTN_STATE state = RELEASED;
+  __disable_irq();
   BSP_init(&state, BREADBOARD_ATTACHED);
-  
+  OSInit();
   // Exception return happens with POP r7, pc
   
+  /*
   *(--sp_led4) = (0x1U << 24); // Thumb state in xPSR
   *(--sp_led4) = (uint32_t)main_LED4; // PC (start of main_LED4)
   *(--sp_led4) = 0x0000000EU; // LR
@@ -93,7 +98,12 @@ int main(void)
   *(--sp_whiteled) = 0x00000000U; // R0
   *(--sp_whiteled) = 0xFFFFFFF9U; // PC (Special exception return instruction) see ref manual p. 20
   *(--sp_whiteled) = 0x00000000U; // R7
+  */
   
+  OSTask_start(&led4task, main_LED4, stack_led4, sizeof(stack_led4));
+  OSTask_start(&whiteledtask, main_WHITELED, stack_whiteled, sizeof(stack_whiteled));
+  
+  OSRun();
   while (1){};
   
   return 0;

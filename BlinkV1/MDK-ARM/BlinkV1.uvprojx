@@ -512,6 +512,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Tasks</GroupName>
+          <Files>
+            <File>
+              <FileName>tasks.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\tasks.c</FilePath>
+            </File>
+            <File>
+              <FileName>tasks.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Src\tasks.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
         </Group>
       </Groups>
